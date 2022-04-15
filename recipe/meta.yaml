@@ -1,5 +1,5 @@
 {% set name = "smartmontools" %}
-{% set version = "7.2" %}
+{% set version = "7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/releases/download/RELEASE_{{ version[0] }}_{{ version[2] }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5cd98a27e6393168bc6aaea070d9e1cd551b0f898c52f66b2ff2e5d274118cd6
+  sha256: a544f8808d0c58cfb0e7424ca1841cb858a974922b035d505d4e4c248be3a22b
 
 build:
   number: 0
@@ -28,7 +28,7 @@ about:
   license: GPL-2.0-or-later
   license_family: GPL
   license_file: COPYING
-  summary: 'S.M.A.R.T. Monitoring Tools'
+  summary: S.M.A.R.T. Monitoring Tools
   description: |
     The smartmontools package contains two utility programs (smartctl and
     smartd) to control and monitor storage systems using the 
