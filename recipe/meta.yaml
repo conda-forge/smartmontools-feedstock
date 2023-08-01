@@ -1,5 +1,5 @@
 {% set name = "smartmontools" %}
-{% set version = "7.3" %}
+{% set version = "7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/releases/download/RELEASE_{{ version[0] }}_{{ version[2] }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a544f8808d0c58cfb0e7424ca1841cb858a974922b035d505d4e4c248be3a22b
+  sha256: e9a61f641ff96ca95319edfb17948cd297d0cd3342736b2c49c99d4716fb993d
 
 build:
   number: 0
