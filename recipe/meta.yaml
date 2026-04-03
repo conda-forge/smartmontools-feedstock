@@ -3,7 +3,7 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/releases/download/RELEASE_{{ version[0] }}_{{ version[2] }}/{{ name }}-{{ version }}.tar.gz
@@ -17,6 +17,7 @@ requirements:
   build:
     - make
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
 
 test:
   commands:
@@ -31,9 +32,9 @@ about:
   summary: S.M.A.R.T. Monitoring Tools
   description: |
     The smartmontools package contains two utility programs (smartctl and
-    smartd) to control and monitor storage systems using the 
-    Self-Monitoring, Analysis and Reporting Technology System (SMART) 
-    built into most modern ATA/SATA, SCSI/SAS and NVMe disks. 
+    smartd) to control and monitor storage systems using the
+    Self-Monitoring, Analysis and Reporting Technology System (SMART)
+    built into most modern ATA/SATA, SCSI/SAS and NVMe disks.
   doc_url: https://www.smartmontools.org/wiki/TocDoc
   dev_url: https://www.smartmontools.org/browser/trunk/smartmontools
 
