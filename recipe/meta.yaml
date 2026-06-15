@@ -10,7 +10,7 @@ source:
   sha256: e9a61f641ff96ca95319edfb17948cd297d0cd3342736b2c49c99d4716fb993d
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
@@ -32,9 +32,9 @@ about:
   summary: S.M.A.R.T. Monitoring Tools
   description: |
     The smartmontools package contains two utility programs (smartctl and
-    smartd) to control and monitor storage systems using the 
-    Self-Monitoring, Analysis and Reporting Technology System (SMART) 
-    built into most modern ATA/SATA, SCSI/SAS and NVMe disks. 
+    smartd) to control and monitor storage systems using the
+    Self-Monitoring, Analysis and Reporting Technology System (SMART)
+    built into most modern ATA/SATA, SCSI/SAS and NVMe disks.
   doc_url: https://www.smartmontools.org/wiki/TocDoc
   dev_url: https://www.smartmontools.org/browser/trunk/smartmontools
 
