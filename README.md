@@ -3,7 +3,7 @@ About smartmontools-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/smartmontools-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.smartmontools.org
+Home: https://www.smartmontools.org/
 
 Package license: GPL-2.0-or-later
 
@@ -17,7 +17,6 @@ The smartmontools package contains two utility programs (smartctl and
 smartd) to control and monitor storage systems using the
 Self-Monitoring, Analysis and Reporting Technology System (SMART)
 built into most modern ATA/SATA, SCSI/SAS and NVMe disks.
-
 
 Current build status
 ====================
@@ -75,31 +74,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `smartmontools` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install smartmontools
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install smartmontools
 ```
 
-It is possible to list all of the versions of `smartmontools` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add smartmontools
+# for installing globally
+pixi global install smartmontools
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `smartmontools` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search smartmontools --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search smartmontools --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search smartmontools --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -111,6 +152,8 @@ mamba repoquery whoneeds smartmontools --channel conda-forge
 # List dependencies of `smartmontools`:
 mamba repoquery depends smartmontools --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
