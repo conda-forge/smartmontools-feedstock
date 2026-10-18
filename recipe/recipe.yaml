@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: smartmontools
-  version: "7.4"
+  version: "7.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://github.com/${{ name }}/${{ name }}/releases/download/RELEASE_${{ version[0] }}_${{ version[2] }}/${{ name }}-${{ version }}.tar.gz
-  sha256: e9a61f641ff96ca95319edfb17948cd297d0cd3342736b2c49c99d4716fb993d
+  sha256: 690b83ca331378da9ea0d9d61008c4b22dde391387b9bbad7f29387f2595f76e
 
 build:
-  number: 3
+  number: 0
   skip: win
 
 requirements:
